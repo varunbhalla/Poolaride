@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/eTStart"
+            android:layout_width="229dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="61dp"
+            android:ems="10"
+            android:hint="Enter starting point here.." >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/tVStart"
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:text="Start"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tVEnd"
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/eTStart"
+            android:layout_marginTop="26dp"
+            android:text="End"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/eTEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tVEnd"
+            android:layout_marginTop="14dp"
+            android:ems="10"
+            android:hint="Enter destination here.." />
+
+        <Button
+            android:id="@+id/bAuto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="54dp"
+            android:background="@drawable/autoxml" />
+
+        <Button
+            android:id="@+id/bTaxi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/bAuto"
+            android:layout_alignBottom="@+id/bAuto"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/taxixml" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/TextView01"
+            android:layout_marginTop="26dp"
+            android:ems="10"
+            android:width="320px" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="Time"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="45px"
+            android:layout_height="45px"
+            android:layout_alignBaseline="@+id/editText1"
+            android:layout_alignBottom="@+id/editText1"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/editText1"
+            android:background="@drawable/timexml"
+            android:onClick="showTimeDialog" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
