@@ -1,3 +1,18 @@
 Pool A Ride is an android application for connecting people travelling similar routes
 in an auto or taxi in order to cut their cost of tavel and also reduce the traffic on
-roads.
+roads. The app is still work in progress with most of the functionality complete.
+
+The app integrates Facebook and uses the Parse.com cloud for data storage and push notifications.
+
+
+
+To Run The App
+
+-Clone the repository and open the Android project.
+-Add your Parse application id and client key in the relevant areas( I've added comments in the classes)
+-Add your Facebook application id in strings.xml
+
+
+
+
+Developed by Varun Bhalla
